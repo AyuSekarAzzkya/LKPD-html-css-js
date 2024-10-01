@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pencarian Nama</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Masukkan Nama">
+    <button id="search-button">Cari</button>
+    <div id="search-result"></div>
+  </div>
+
+  <script>
+    // disingkat dengan masing masing nama variabel
+    const inputPencarian = document.getElementById('search-input');
+    const tombolCari = document.getElementById('search-button');
+    const hasilPencarian = document.getElementById('search-result');
+
+    tombolCari.addEventListener('click', () => { //untuk menangani aksi klik pada tombol dan kemudian menjalankan fungsi tertentu
+      const nilaiInput = inputPencarian.value.trim(); 
+      const namaTersedia = ['Alvin', 'Bobi']; // array, karena untuk menampung string nama
+      if (nilaiInput !== '') { // mengecek inputan kosong atau tidak nya
+        if (namaTersedia.includes(nilaiInput)) { // untuk mengecek apakah nilai tertentu ada di dalam array namaTersedia
+          hasilPencarian.innerText = `Nama ${nilaiInput} tersedia`; //output
+        } else {
+          hasilPencarian.innerText = `Nama ${nilaiInput} tidak tersedia`; // output jika nama tidak tersedia
+        }
+      } else {
+        hasilPencarian.innerText = 'Anda Tidak mencari data'; // ouput untuk jika inputan tidak ada isinya
+      }
+    });
+  </script>
+</body>
+</html>

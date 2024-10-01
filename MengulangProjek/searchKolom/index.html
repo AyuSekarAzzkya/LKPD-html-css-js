@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="cariInput" placeholder="Masukkan Nama">
+    <button id="tombolCari">Cari</button>
+    <div id="hasilCari"></div>
+
+    <script>
+        var cariInput = document.getElementById ("cariInput");
+        var tombolCari = document.getElementById ("tombolCari");
+        var hasilCari = document.getElementById ("hasilCari");
+
+        tombolCari.addEventListener ('click', ()=> {
+            const nilaiInput = cariInput.value
+            if (nilaiInput !== ''){
+                hasilCari.innerText = ` mencari Nama ${nilaiInput}`;
+            }else{
+               hasilCari.innerText = "anda tidak mencari data apapun"
+            }
+        })
+    </script>
+</body>
+</html>

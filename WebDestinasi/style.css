@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+ul{
+    display: flex;
+    margin-left: 30px;
+    
+}
+li{
+    list-style-type: none;
+    padding-right: 40px;
+}
+.logo{
+    font-style: italic;
+    margin-top: 12px;
+    margin-left: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    background-color: #1BA0E1;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+
+}
+nav{
+    margin-top: 22px;
+    font-size: 20px;
+    margin-right: 60px;
+}
+.dest1{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(135, 209, 222);
+    margin-left: 60px;
+    margin-top: 30px;
+    
+}
+.jogja{
+    text-align: center;
+    padding-top: 12px;
+}
+p{
+    font-size: 20px;
+   text-align: center;
+   margin-top: 19px;
+}
+.imgjogja{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+button{
+    margin-left: 39%;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: aqua;
+}
+
+
+.dest2{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(135, 209, 222);
+    margin-left: 60px;
+    margin-top: 50px;
+    
+}
+.bali{
+    text-align: center;
+    padding-top: 12px;
+}
+
+.imgbali{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.dest3{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(135, 209, 222);
+    margin-left: 60px;
+    margin-top: 50px;
+    
+}
+.bndg{
+    text-align: center;
+    padding-top: 12px;
+}
+
+.imgbndg{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.icon{
+    display: flex;
+}
+.icon1{
+    margin-top: 30px;
+    margin-left: 120px;
+}
+.icon2{
+    margin-top: 30px;
+    margin-left: 150px;
+}

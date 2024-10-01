@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="hitungMundur()">KLIK SAYA !</button>
+    <div id="hitungMundur"></div>
+
+    <script>
+        function hitungMundur (){
+            let hitung =5;
+            let interval = setInterval(function(){
+                document.getElementById ("hitungMundur").innerHTML = `Danger!!! Alert akan tertutup dalam waktu ${hitung}`;
+                hitung--;
+                if(hitung < 0){
+                    clearInterval(interval);
+                    document.getElementById("hitungMundur").innerHTML = "";
+                }
+            },1000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <label for="jenjang">Jenjang Pendidikan</label>
+        <select name="jenjang" id="jenjang" onchange="pilih(this)">
+            <option value="">Pilih Jenjang</option>
+            <option value="sd">SD</option>
+            <option value="smp">SMP</option>
+            <option value="sma">SMA</option>
+            <option value="d3">D3</option>
+        </select> <br>
+
+        <label for="kelas">Tingkat Sekolah</label>
+        <select name="kelas" id="kelas">
+            <option disabled hidden selected>Silahkan pilih jenjang pendidikan</option>
+        </select>
+    </form>
+    <script>
+        function pilih(e) {
+            const select = document.getElementById('kelas');
+
+            if (e.value == "sd") {
+                select.innerHTML = `
+            <option value ="1">Kelas 1 </option>
+            <option value ="2">Kelas 2 </option>
+            <option value ="3">Kelas 3 </option>
+            <option value ="4">Kelas 4 </option>
+            <option value ="5">Kelas 5 </option>
+            <option value ="6">Kelas 6 </option>
+            `;
+            } else if (e.value == "smp") {
+                select.innerHTML = `
+            <option value ="7">Kelas 7 </option>
+            <option value ="8">Kelas 8 </option>
+            <option value ="9">Kelas 9 </option>
+            `;
+            } else if (e.value == "sma") {
+                select.innerHTML = `
+            <option value ="10">Kelas 10 </option>
+            <option value ="11">Kelas 11 </option>
+            <option value ="12">Kelas 12 </option>
+            `;
+            } else if (e.value == "d3") {
+                select.innerHTML = `
+            <option value ="1">Semester 1 </option>
+            <option value ="2">Semester 2 </option>
+            <option value ="3">Semester 3 </option>
+            <option value ="4">Semester 4 </option>
+            <option value ="5">Semester 5 </option>
+            <option value ="6">Semester 6 </option>
+            `;
+            } else {
+                select.innerHTML = `
+            <option value ="1">Semester 1 </option>
+            <option value ="2">Semester 2 </option>
+            <option value ="3">Semester 3 </option>
+            <option value ="4">Semester 4 </option>
+            <option value ="5">Semester 5 </option>
+            <option value ="6">Semester 6 </option>
+            <option value ="7">Semester 7 </option>
+            <option value ="8">Semester 8 </option>
+            `;
+
+            }
+
+        }
+    </script>
+
+
+
+
+    </script>
+</body>
+
+</html>
